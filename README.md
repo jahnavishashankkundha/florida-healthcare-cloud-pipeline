@@ -144,7 +144,7 @@ SELECT
 FROM florida_hospitals_clean
 WHERE state = 'FL';
 ```
-**### Step 3: Analytical SQL Queries**
+### Step 3: Analytical SQL Queries
 ```SQL
 -- Query 1: Hospital Quality Ratings & Emergency Services by Ownership Type
 SELECT 
