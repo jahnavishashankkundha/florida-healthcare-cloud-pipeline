@@ -108,8 +108,10 @@ FILE_FORMAT = (
     FIELD_OPTIONALLY_ENCLOSED_BY = '"'
 )
 FORCE = TRUE;
+
+
 **### Step 2: Data Transformation & Analytics Model (Gold)**
-SQL
+'''SQL
 -- Create Cleaned & Typed Dimensional Analytics Table
 CREATE OR REPLACE TABLE dim_florida_hospitals AS
 SELECT 
@@ -141,8 +143,10 @@ SELECT
 
 FROM florida_hospitals_clean
 WHERE state = 'FL';
+
+
 **### Step 3: Analytical SQL Queries**
-SQL
+'''SQL
 -- Query 1: Hospital Quality Ratings & Emergency Services by Ownership Type
 SELECT 
     hospital_ownership,
